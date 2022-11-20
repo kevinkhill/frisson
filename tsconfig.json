@@ -20,10 +20,7 @@
     "incremental": true
   },
   "files": [
-    "next.config.js",
-    "./components/options.tsx",
-    "./pages/Footer.tsx",
-    "./pages/SpotifyButton.tsx"
+    "next.config.js"
   ],
   "include": [
     "next-env.d.ts",
