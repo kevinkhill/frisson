@@ -1,7 +1,8 @@
-import { useCallback } from "react";
+import React, { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
+import { loadSeaAnemonePreset } from "tsparticles-preset-sea-anemone";
 
 import type { ParticleOptions } from "../lib/types";
 
@@ -23,3 +24,19 @@ export default function MyParticles({ options }: { options?: ParticleOptions }) 
     <Particles id="tsparticles" init={particlesInit} loaded={particlesLoaded} options={options} />
   );
 }
+
+// export default class ParticlesContainer extends React.PureComponent {
+//   // this customizes the component tsParticles installation
+//   async customInit(engine: Engine): Promise<void> {
+//     // this adds the preset to tsParticles, you can safely use the
+//     await loadSeaAnemonePreset(engine);
+//   }
+
+//   render() {
+//     const options = {
+//       preset: "seaAnemone"
+//     };
+
+//     return <Particles id="tsparticles" options={options} init={this.customInit} />;
+//   }
+// }

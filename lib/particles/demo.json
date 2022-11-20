@@ -26,29 +26,10 @@
   },
   "detectRetina": true,
   "duration": 0,
-  "fpsLimit": 120,
+  "fpsLimit": 30,
   "interactivity": {
     "detectsOn": "window",
     "events": {
-      "onClick": {
-        "enable": false,
-        "mode": []
-      },
-      "onDiv": {
-        "selectors": [],
-        "enable": false,
-        "mode": [],
-        "type": "circle"
-      },
-      "onHover": {
-        "enable": false,
-        "mode": [],
-        "parallax": {
-          "enable": false,
-          "force": 2,
-          "smooth": 10
-        }
-      },
       "resize": true
     },
     "modes": {
@@ -272,9 +253,9 @@
         "right": "destroy",
         "top": "destroy"
       },
-      "random": false,
+      "random": true,
       "size": true,
-      "speed": 5,
+      "speed": 4,
       "spin": {
         "acceleration": 0,
         "enable": false
@@ -490,7 +471,7 @@
         "opacity": 1
       },
       "particles": {
-        "enable": false,
+        "enable": true,
         "frequency": 0.05,
         "opacity": 1
       }

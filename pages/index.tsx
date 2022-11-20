@@ -33,7 +33,7 @@ export default function Home() {
             </p>
             <h1 className="my-4 text-5xl font-bold leading-tight">Thats Frisson!</h1>
             <p className="leading-normal text-2xl mb-8">
-              We are here to help you share frisson to people who are missing out chills and tingles
+              We want to connect people and help spread frisson to everyone around the world.
             </p>
             <SpotifyButton />
           </div>
