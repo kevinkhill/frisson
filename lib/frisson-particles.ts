@@ -1,4 +1,4 @@
-import { IOptions, RecursivePartial, SizeMode } from "tsparticles-engine";
+import type { IOptions, RecursivePartial } from "tsparticles-engine";
 
 const options: RecursivePartial<IOptions> = {
   autoPlay: true,

@@ -2,11 +2,11 @@ import Account from "@components/account";
 import Footer from "@components/footer";
 import Header from "@components/header";
 import HomepageWelcomeSection from "@components/homepage/homepage-welcome";
-import MyParticles from "@components/homepage/particles";
 import PreFooter from "@components/homepage/pre-footer";
 import SpotifyButton from "@components/homepage/spotify-button";
 import { BottomSwoosh, TopSwoosh } from "@components/homepage/swooshes";
 import WelcomeCards from "@components/homepage/welcome-cards";
+import MyParticles from "@components/particles";
 import frissonParticles from "@lib/frisson-particles";
 import { useSession, useSupabaseClient } from "@supabase/auth-helpers-react";
 import { Auth, ThemeSupa } from "@supabase/auth-ui-react";
@@ -40,7 +40,7 @@ export default function Home() {
           {/* <!--Right Col--> */}
           <div className="w-full md:w-3/5 py-6 text-center">
             {/* <img className="w-full md:w-4/5 z-50" src="https://place-hold.it/300x300?text=Noice!" /> */}
-            <MyParticles options={frissonParticles} />
+            {/* <MyParticles options={frissonParticles} /> */}
           </div>
         </div>
       </div>
