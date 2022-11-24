@@ -40,7 +40,7 @@ export default function Home() {
           {/* <!--Right Col--> */}
           <div className="w-full md:w-3/5 py-6 text-center">
             {/* <img className="w-full md:w-4/5 z-50" src="https://place-hold.it/300x300?text=Noice!" /> */}
-            {/* <MyParticles options={frissonParticles} /> */}
+            <MyParticles options={frissonParticles} />
           </div>
         </div>
       </div>
