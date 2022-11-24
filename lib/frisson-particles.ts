@@ -28,7 +28,7 @@ const options: RecursivePartial<IOptions> = {
   },
   detectRetina: true,
   duration: 0,
-  fpsLimit: 40,
+  fpsLimit: 60,
   interactivity: {
     detectsOn: "window",
     events: {
@@ -522,8 +522,8 @@ const options: RecursivePartial<IOptions> = {
       wait: false
     },
     rate: {
-      quantity: 10,
-      delay: 0.5
+      quantity: 5,
+      delay: 0.2
     },
     shape: "square",
     startCount: 0,
