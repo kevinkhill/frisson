@@ -195,13 +195,13 @@ const options: RecursivePartial<IOptions> = {
       decay: 0,
       distance: {},
       direction: "none",
-      drift: 10,
+      drift: 0,
       enable: true,
       gravity: {
         acceleration: 9.81,
         enable: false,
-        inverse: true,
-        maxSpeed: 50
+        inverse: false,
+        maxSpeed: 0
       },
       path: {
         clamp: true,
