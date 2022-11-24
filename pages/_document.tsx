@@ -10,7 +10,6 @@ export default function Document() {
       <meta name="description" content="Simple landind page" />
       <meta name="keywords" content="" />
       <meta name="author" content="" />
-      <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-sea-anemone@2/tsparticles.preset.seaAnemone.bundle.min.js"></script>
       <Head />
       <body className="leading-normal tracking-normal text-white gradient">
         <Main />

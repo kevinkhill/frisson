@@ -17,10 +17,24 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@lib/*": [
+        "./lib/*"
+      ],
+      "@components/*": [
+        "./components/*"
+      ]
+    }
   },
   "files": [
-    "next.config.js"
+    "next.config.js",
+    "pages/welcome-cards.tsx",
+    "components/undraw/undraw-svg.tsx",
+    "./pages/HomepageWelcomeSection.tsx",
+    "./components/undraw/CollaboratingTeamSvg.tsx",
+    "./components/undraw/ConnectedWorldSvg.tsx"
   ],
   "include": [
     "next-env.d.ts",

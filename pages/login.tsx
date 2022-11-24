@@ -4,7 +4,7 @@ import { Auth, ThemeSupa } from "@supabase/auth-ui-react";
 import Account from "../components/account";
 import Footer from "../components/footer";
 import Header from "../components/header";
-import SpotifyButton from "../components/spotify-button";
+import SpotifyButton from "../components/homepage/spotify-button";
 import Swooshes from "../components/swooshes";
 
 const Home = () => {
