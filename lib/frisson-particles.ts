@@ -1,4 +1,4 @@
-import { IOptions, RecursivePartial } from "tsparticles-engine";
+import { IOptions, RecursivePartial, SizeMode } from "tsparticles-engine";
 
 const options: RecursivePartial<IOptions> = {
   autoPlay: true,
@@ -187,19 +187,20 @@ const options: RecursivePartial<IOptions> = {
       },
       center: {
         x: 50,
-        y: 40,
-        mode: "percent",
-        radius: 0
+        y: 32,
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
+        mode: "percent"
       },
       decay: 0,
       distance: {},
       direction: "none",
-      drift: 0,
+      drift: 10,
       enable: true,
       gravity: {
         acceleration: 9.81,
         enable: false,
-        inverse: false,
+        inverse: true,
         maxSpeed: 50
       },
       path: {
