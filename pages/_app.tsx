@@ -1,12 +1,19 @@
-import "windi.css";
 import "../styles/globals.css";
+import "windi.css";
+import "windi-devtools";
 
 import { createBrowserSupabaseClient } from "@supabase/auth-helpers-nextjs";
 import { Session, SessionContextProvider } from "@supabase/auth-helpers-react";
 import { AppProps } from "next/app";
 import { useState } from "react";
 
-function MyApp({ Component, pageProps }: AppProps<{ initialSession: Session }>) {
+export default function MyApp({
+  Component,
+  pageProps
+}: AppProps<{
+  initialSession: Session;
+}>) {
+  // Create a new supabase browser client on every first render.
   const [supabaseClient] = useState(() => createBrowserSupabaseClient());
 
   return (
@@ -18,5 +25,3 @@ function MyApp({ Component, pageProps }: AppProps<{ initialSession: Session }>) 
     </SessionContextProvider>
   );
 }
-
-export default MyApp;

@@ -1,4 +1,3 @@
-import Account from "@components/account";
 import Footer from "@components/footer";
 import Header from "@components/header";
 import HomepageWelcomeSection from "@components/homepage/homepage-welcome";
@@ -8,19 +7,10 @@ import { BottomSwoosh, TopSwoosh } from "@components/homepage/swooshes";
 import WelcomeCards from "@components/homepage/welcome-cards";
 import MyParticles from "@components/particles";
 import frissonParticles from "@lib/frisson-particles";
-import { useSession, useSupabaseClient } from "@supabase/auth-helpers-react";
-import { Auth, ThemeSupa } from "@supabase/auth-ui-react";
-import clsx from "clsx";
-import { useState } from "react";
 
 export const SITE_TITLE = "Frisson";
 
 export default function Home() {
-  const session = useSession();
-  // const [options, setOptions] = useState();
-  // const options = mergeOptions({});
-  // const supabase = useSupabaseClient();
-
   return (
     <>
       <Header />
@@ -47,12 +37,6 @@ export default function Home() {
       <div className="pt-12">
         <TopSwoosh fillColor="#FFFFFF" />
       </div>
-
-      <section
-        className={clsx("bg-white border-b py-8", { hidden: typeof session !== "undefined" })}
-      >
-        <div className="container">{session && <Account session={session} />}</div>
-      </section>
 
       <section className="bg-white border-b py-8">
         <HomepageWelcomeSection />

@@ -1,4 +1,9 @@
+import { useSupabaseClient } from "@supabase/auth-helpers-react";
+import router from "next/router";
+
 export default function Header() {
+  const supabaseClient = useSupabaseClient();
+
   return (
     <nav id="header" className="fixed w-full z-30 top-0 bg-white">
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
@@ -54,9 +59,13 @@ export default function Header() {
           </ul>
           <button
             id="navAction"
+            onClick={async () => {
+              await supabaseClient.auth.signOut();
+              router.push("/");
+            }}
             className="mx-auto lg:mx-0 hover:font-bold hover:underline rounded-full mt-4 lg:mt-0 py-4 px-8 shadow focus:outline-none focus:shadow-outline transform transition duration-300 ease-in-out bg-white text-gray-800"
           >
-            Action
+            Sign Out
           </button>
         </div>
       </div>
